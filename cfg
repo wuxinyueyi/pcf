@@ -4,36 +4,36 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-    - name: CN_0
-      type: vmess
-      server: 111.26.109.79
-      port: 30829
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      alterId: 2
-      cipher: auto
+    - name: SK_1
+      type: ss
+      server: 156.146.40.194
+      port: 989
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-cfb
       tls: false
       skip-cert-verify: false
-      network: ws
+      network: ""
       ws-opts:
-        path: /oooo
+        path: ""
         headers:
             Host: ""
-      password: ""
+      password: f8f7aCzcPKbsF8p3
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
-      udp: false
-    - name: CN_1
+      udp: true
+    - name: CN_2
       type: vmess
-      server: 120.26.55.225
-      port: 50002
+      server: 183.236.51.38
+      port: 49291
       uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-      alterId: 0
+      alterId: 64
       cipher: auto
       tls: false
       skip-cert-verify: false
-      network: tcp
+      network: ""
       ws-opts:
         path: ""
         headers:
@@ -43,74 +43,14 @@ proxies:
       obfs: ""
       protocol-param: ""
       obfs-param: ""
-      udp: false
-    - name: IR_2
-      type: vmess
-      server: 37.152.173.192
-      port: 5008
-      uuid: 81647712-fcd8-4da9-8f80-bc7a149354f8
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
+      udp: true
     - name: CN_3
       type: trojan
-      server: 183.240.180.15
-      port: 27235
+      server: 157.148.96.89
+      port: 15229
       uuid: ""
       alterId: 0
       cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_4
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: MD_5
-      type: ss
-      server: 185.153.197.5
-      port: 989
-      uuid: ""
-      alterId: 0
-      cipher: aes-256-cfb
       tls: false
       skip-cert-verify: false
       network: ""
@@ -118,213 +58,33 @@ proxies:
         path: ""
         headers:
             Host: ""
-      password: f8f7aCzcPKbsF8p3
+      password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
-      udp: false
-    - name: CN_6
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 80f73b42-8264-11ef-8dc4-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_7
+      udp: true
+    - name: JP_4
       type: vmess
-      server: 111.26.109.79
-      port: 30840
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      server: 38.47.96.30
+      port: 443
+      uuid: 164a6ad0-476a-4bae-b78f-a3d37cf0f414
       alterId: 0
       cipher: auto
-      tls: false
+      tls: true
       skip-cert-verify: false
       network: ws
       ws-opts:
-        path: /index
+        path: /lzjjj
         headers:
-            Host: ""
+            Host: th.lzj520hxw.dpdns.org
       password: ""
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
-      udp: false
-    - name: CN_8
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_9
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_10
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_11
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_12
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_13
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: SI_14
-      type: ss
-      server: 91.132.94.200
-      port: 989
-      uuid: ""
-      alterId: 0
-      cipher: aes-256-cfb
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: f8f7aCzcPKbsF8p3
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_15
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: KR_16
+      udp: true
+    - name: KR_5
       type: ss
       server: 125.141.31.72
       port: 15098
@@ -344,1509 +104,29 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: IR_17
+    - name: CN_6
       type: vmess
-      server: 193.151.151.93
-      port: 52262
-      uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
-      alterId: 0
+      server: 111.26.109.79
+      port: 30829
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 2
       cipher: auto
       tls: false
       skip-cert-verify: false
-      network: tcp
+      network: ws
       ws-opts:
-        path: ""
+        path: /oooo
         headers:
-            Host: ""
+            Host: ocbc.com
       password: ""
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_18
+    - name: JP_11
       type: ss
-      server: 120.236.198.182
-      port: 40030
-      uuid: ""
-      alterId: 0
-      cipher: chacha20-ietf-poly1305
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 7905a32b-012c-4711-89e2-73b6713eca75
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: RU_19
-      type: vmess
-      server: 45.147.201.231
-      port: 20071
-      uuid: 4b41312a-e40f-40c3-aa85-efc148060242
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_20
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: tcp
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: PT_21
-      type: ss
-      server: 185.231.233.112
-      port: 989
-      uuid: ""
-      alterId: 0
-      cipher: aes-256-cfb
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: f8f7aCzcPKbsF8p3
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_22
-      type: trojan
-      server: 120.198.71.191
-      port: 55799
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 55f2afab-bc41-4231-b725-76bef15c3cf7
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_23
-      type: trojan
-      server: 120.198.71.191
-      port: 54031
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 55f2afab-bc41-4231-b725-76bef15c3cf7
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: AM_24
-      type: trojan
-      server: 188.164.159.98
-      port: 2083
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: AM_25
-      type: trojan
-      server: 188.164.159.74
-      port: 8443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: KR_26
-      type: trojan
-      server: 121.149.228.125
-      port: 12315
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_27
-      type: vmess
-      server: 111.26.109.79
-      port: 30828
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      alterId: 2
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: RU_28
-      type: trojan
-      server: 45.67.215.217
-      port: 2087
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_29
-      type: trojan
-      server: 183.240.180.15
-      port: 21233
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: FR_30
-      type: trojan
-      server: 141.11.203.191
-      port: 8443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: AM_31
-      type: trojan
-      server: 188.164.159.185
-      port: 8443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_32
-      type: trojan
-      server: 199.34.228.50
-      port: 2053
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_33
-      type: trojan
-      server: 2606:4700:58::adf5:3b6e
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_34
-      type: vmess
-      server: 120.233.203.78
-      port: 15002
-      uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_35
-      type: trojan
-      server: 199.34.228.178
-      port: 8443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: AM_36
-      type: trojan
-      server: 188.164.159.214
-      port: 2083
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_37
-      type: trojan
-      server: 2606:4700:58::a29f:2ca8
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_38
-      type: trojan
-      server: 108.165.152.55
-      port: 2096
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: PE_39
-      type: trojan
-      server: 154.219.5.44
-      port: 2053
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: KZ_40
-      type: trojan
-      server: 31.43.179.27
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: RU_41
-      type: trojan
-      server: 46.254.92.142
-      port: 2087
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_42
-      type: trojan
-      server: 103.116.7.133
-      port: 2083
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_43
-      type: trojan
-      server: 2606:4700:58::a29f:2cc7
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CY_44
-      type: trojan
-      server: 45.150.115.195
-      port: 2087
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_45
-      type: trojan
-      server: 167.68.4.58
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_46
-      type: trojan
-      server: 67.226.221.12
-      port: 80
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CY_47
-      type: trojan
-      server: 176.53.144.206
-      port: 8443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: AM_48
-      type: trojan
-      server: 188.164.159.18
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_49
-      type: trojan
-      server: 2606:4700:58::adf5:3b80
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_51
-      type: trojan
-      server: 192.200.160.169
-      port: 2096
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_52
-      type: trojan
-      server: 103.116.7.220
-      port: 2096
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_54
-      type: trojan
-      server: 2606:4700:58::adf5:3b90
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_55
-      type: trojan
-      server: 135.84.74.254
-      port: 2083
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: KZ_56
-      type: trojan
-      server: 31.43.179.60
-      port: 2053
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_58
-      type: vmess
-      server: 111.26.109.79
-      port: 30828
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      alterId: 2
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_59
-      type: vmess
-      server: 2606:4700:3031::6815:117f
-      port: 443
-      uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05
-      alterId: 0
-      cipher: auto
-      tls: true
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: RU_60
-      type: trojan
-      server: 46.254.93.243
-      port: 8443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_61
-      type: trojan
-      server: 108.165.152.14
-      port: 2096
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: SC_62
-      type: trojan
-      server: 154.197.64.206
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: NL_63
-      type: trojan
-      server: 5.35.68.249
-      port: 2053
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: NL_64
-      type: trojan
-      server: 45.134.21.8
-      port: 2053
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: KR_65
-      type: trojan
-      server: 112.162.203.5
-      port: 50000
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: RU_66
-      type: trojan
-      server: 5.182.85.255
-      port: 2096
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: RU_67
-      type: trojan
-      server: 5.182.84.244
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_68
-      type: vmess
-      server: 36.150.94.35
-      port: 30812
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      alterId: 2
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_69
-      type: vmess
-      server: 2606:4700:3033::ac43:b0c4
-      port: 443
-      uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05
-      alterId: 0
-      cipher: auto
-      tls: true
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_70
-      type: vmess
-      server: 120.198.71.217
-      port: 58882
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_71
-      type: vmess
-      server: 111.26.109.79
-      port: 30840
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_72
-      type: trojan
-      server: 183.240.180.15
-      port: 27235
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 225d1cca-d744-11ef-b790-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_73
-      type: trojan
-      server: 183.240.180.15
-      port: 14234
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_74
-      type: vmess
-      server: 120.198.71.217
-      port: 46759
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_75
-      type: trojan
-      server: 183.240.180.15
-      port: 14234
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: KR_76
-      type: trojan
-      server: 121.178.51.126
-      port: 50000
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_77
-      type: trojan
-      server: 183.240.180.15
-      port: 27233
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: e3217bc2-061f-11f0-90e2-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_78
-      type: trojan
-      server: 183.240.180.15
-      port: 27231
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_79
-      type: trojan
-      server: 183.240.180.15
-      port: 27233
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_80
-      type: trojan
-      server: 183.240.180.15
-      port: 27231
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_81
-      type: trojan
-      server: 183.240.180.15
-      port: 27231
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_82
-      type: trojan
-      server: 183.240.180.15
-      port: 27231
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_83
-      type: trojan
-      server: 183.240.180.15
-      port: 27231
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_84
-      type: vmess
-      server: 111.26.109.79
-      port: 30809
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      alterId: 2
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_85
-      type: vmess
-      server: 120.232.153.40
-      port: 32209
-      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_86
-      type: trojan
-      server: 183.240.180.15
-      port: 14234
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_87
-      type: trojan
-      server: 183.240.180.15
-      port: 27233
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 5cfee98c-0e3b-11ed-bd7c-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_88
-      type: trojan
-      server: 157.148.64.3
-      port: 15229
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 87b31a02-172e-11ee-a11f-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_90
-      type: trojan
-      server: 2606:4700:58::a29f:2c52
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_91
-      type: trojan
-      server: 183.240.180.15
-      port: 14234
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: ee1b9e94-9b95-11ef-8967-f23c91cfbbc9
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: LU_92
-      type: trojan
-      server: 45.80.209.25
-      port: 81
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_93
-      type: trojan
-      server: 125.88.196.153
-      port: 8313
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: US_94
-      type: trojan
-      server: 2606:4700:58::a29f:2ce3
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: Aimer
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: CN_95
-      type: trojan
-      server: 183.240.180.15
-      port: 14234
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: true
-    - name: SG_96
-      type: ss
-      server: 47.129.2.253
+      server: 52.193.38.93
       port: 443
       uuid: ""
       alterId: 0
@@ -1858,15 +138,15 @@ proxies:
         path: ""
         headers:
             Host: ""
-      password: qawszxc123
+      password: awsps0501
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: US_97
+    - name: US_12
       type: ss
-      server: 156.251.179.139
+      server: 156.251.179.181
       port: 636
       uuid: ""
       alterId: 0
@@ -1878,13 +158,13 @@ proxies:
         path: ""
         headers:
             Host: ""
-      password: 0b191076d18f
+      password: 23d03aa704c7
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: HK_98
+    - name: HK_13
       type: vmess
       server: 43.247.134.201
       port: 59149
@@ -1904,10 +184,10 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_99
+    - name: CN_14
       type: trojan
-      server: 36.151.192.61
-      port: 444
+      server: 36.151.192.10
+      port: 9141
       uuid: ""
       alterId: 0
       cipher: ""
@@ -1924,7 +204,7 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_100
+    - name: CN_15
       type: trojan
       server: 36.151.192.58
       port: 51083
@@ -1933,7 +213,7 @@ proxies:
       cipher: ""
       tls: false
       skip-cert-verify: true
-      network: ""
+      network: tcp
       ws-opts:
         path: ""
         headers:
@@ -1944,29 +224,9 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: HK_101
-      type: vmess
-      server: 42.2.164.181
-      port: 80
-      uuid: 9b604194-17b7-11ef-80b0-f23c913c8d2b
-      alterId: 2
-      cipher: auto
-      tls: false
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: broadcastlv.chat.bilibili.com
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_102
+    - name: CN_16
       type: ss
-      server: 183.240.211.99
+      server: 183.240.211.97
       port: 8766
       uuid: ""
       alterId: 0
@@ -1984,13 +244,33 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_103
-      type: ss
-      server: 2409:8c54:a820:100::1f
-      port: 44721
+    - name: CN_17
+      type: trojan
+      server: 36.151.192.61
+      port: 4445
       uuid: ""
       alterId: 0
-      cipher: aes-256-gcm
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: d0d08cddacc3190ea81b1b792e1b5fde
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: KR_18
+      type: ss
+      server: 125.141.31.72
+      port: 15098
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-cfb
       tls: false
       skip-cert-verify: false
       network: ""
@@ -1998,15 +278,15 @@ proxies:
         path: ""
         headers:
             Host: ""
-      password: 781bb54c-f089-48df-8102-01288a81eb10
+      password: qwerREWQ@@
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: JP_104
+    - name: JP_19
       type: ss
-      server: 137.220.142.143
+      server: 137.220.142.139
       port: 636
       uuid: ""
       alterId: 0
@@ -2018,82 +298,22 @@ proxies:
         path: ""
         headers:
             Host: ""
-      password: 887bfcf43b52
+      password: 70a0b8103356
       protocol: ""
       obfs: ""
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_105
-      type: trojan
-      server: 36.151.192.61
-      port: 4445
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: d0d08cddacc3190ea81b1b792e1b5fde
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_106
-      type: trojan
-      server: 203.156.253.12
-      port: 39001
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 85f133142f04dbf6547da33895cfabb3
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_107
-      type: trojan
-      server: 183.240.180.15
-      port: 27233
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_109
+    - name: CN_20
       type: trojan
       server: 36.151.192.60
-      port: 13967
+      port: 39701
       uuid: ""
       alterId: 0
       cipher: ""
       tls: false
       skip-cert-verify: true
-      network: ""
+      network: tcp
       ws-opts:
         path: ""
         headers:
@@ -2104,7 +324,47 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_110
+    - name: CN_22
+      type: vmess
+      server: 111.26.109.79
+      port: 30828
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 2
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /oooo
+        headers:
+            Host: ocbc.com
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_23
+      type: trojan
+      server: 36.151.192.61
+      port: 20615
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: d0d08cddacc3190ea81b1b792e1b5fde
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_24
       type: trojan
       server: 36.151.192.60
       port: 7571
@@ -2113,7 +373,7 @@ proxies:
       cipher: ""
       tls: false
       skip-cert-verify: true
-      network: ""
+      network: tcp
       ws-opts:
         path: ""
         headers:
@@ -2124,7 +384,7 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_111
+    - name: CN_25
       type: trojan
       server: 36.151.192.60
       port: 40621
@@ -2133,7 +393,7 @@ proxies:
       cipher: ""
       tls: false
       skip-cert-verify: true
-      network: ""
+      network: tcp
       ws-opts:
         path: ""
         headers:
@@ -2144,29 +404,9 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_112
+    - name: CN_26
       type: ss
-      server: 120.198.71.132
-      port: 49900
-      uuid: ""
-      alterId: 0
-      cipher: chacha20-ietf-poly1305
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: c376082c-95c3-452e-88e4-6bb6a5daab41
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: CN_113
-      type: ss
-      server: 183.240.211.99
+      server: 183.240.211.97
       port: 8774
       uuid: ""
       alterId: 0
@@ -2184,7 +424,7 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_114
+    - name: CN_27
       type: trojan
       server: 36.151.192.61
       port: 4447
@@ -2193,7 +433,7 @@ proxies:
       cipher: ""
       tls: false
       skip-cert-verify: true
-      network: ""
+      network: tcp
       ws-opts:
         path: ""
         headers:
@@ -2204,27 +444,7 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
-    - name: CN_115
-      type: trojan
-      server: 36.151.251.56
-      port: 5975
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: d0d08cddacc3190ea81b1b792e1b5fde
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      udp: false
-    - name: VN_116
+    - name: VN_28
       type: ss
       server: 103.163.218.2
       port: 989
@@ -2244,158 +464,2505 @@ proxies:
       protocol-param: ""
       obfs-param: ""
       udp: false
+    - name: CN_29
+      type: trojan
+      server: 36.151.251.56
+      port: 5975
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: d0d08cddacc3190ea81b1b792e1b5fde
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_30
+      type: trojan
+      server: 36.151.192.61
+      port: 444
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: d0d08cddacc3190ea81b1b792e1b5fde
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: ES_33
+      type: trojan
+      server: 109.234.211.66
+      port: 8443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: store.timimi.dpdns.org
+      password: trojan
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_34
+      type: vmess
+      server: 111.26.109.79
+      port: 30829
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 2
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /oooo
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_35
+      type: vmess
+      server: 120.26.55.225
+      port: 50002
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: IR_36
+      type: vmess
+      server: 37.152.173.192
+      port: 5008
+      uuid: 81647712-fcd8-4da9-8f80-bc7a149354f8
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: AM_37
+      type: trojan
+      server: 188.164.159.185
+      port: 8443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: RU_38
+      type: trojan
+      server: 5.182.84.244
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_39
+      type: trojan
+      server: 103.116.7.220
+      port: 2096
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_40
+      type: trojan
+      server: 167.68.4.58
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: LU_41
+      type: trojan
+      server: 45.80.209.25
+      port: 81
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_42
+      type: trojan
+      server: 199.34.228.178
+      port: 8443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: AM_43
+      type: trojan
+      server: 188.164.159.98
+      port: 2083
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CY_44
+      type: trojan
+      server: 176.53.144.206
+      port: 8443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_45
+      type: trojan
+      server: 2606:4700:58::a29f:2cc7
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_46
+      type: trojan
+      server: 103.116.7.133
+      port: 2083
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: TW_47
+      type: vmess
+      server: 111.243.123.28
+      port: 80
+      uuid: 16f000d7-7805-459d-9130-200d00180b7c
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /market/jp1?ed=512
+        headers:
+            Host: file.dingtalk.com
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_48
+      type: trojan
+      server: 103.116.7.103
+      port: 2083
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_49
+      type: vmess
+      server: 111.26.109.79
+      port: 30840
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /index
+        headers:
+            Host: api100-core-quic-lf.amemv.com
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_50
+      type: vmess
+      server: 36.150.232.128
+      port: 45407
+      uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_51
+      type: vmess
+      server: 120.232.153.40
+      port: 32209
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: VN_52
+      type: ss
+      server: 2400:e920:0:4::50
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: Nk9asglDzHzjktVzTkvhaA
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: RU_53
+      type: vmess
+      server: 45.147.201.231
+      port: 20072
+      uuid: 3c874db4-398e-453f-ab8c-bde0417036be
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_54
+      type: ss
+      server: 183.240.187.198
+      port: 34664
+      uuid: ""
+      alterId: 0
+      cipher: 2022-blake3-aes-128-gcm
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 12xGRmcEy3TVETzE47MreA==
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: PH_56
+      type: trojan
+      server: 154.83.2.200
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: vle.amclubdns.dpdns.org
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_57
+      type: trojan
+      server: 125.88.196.153
+      port: 8313
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_58
+      type: vmess
+      server: 111.26.109.79
+      port: 30840
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /index
+        headers:
+            Host: api100-core-quic-lf.amemv.com
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: IR_59
+      type: vmess
+      server: 185.143.235.201
+      port: 443
+      uuid: 85e4f280-c168-40aa-8f1c-c537ad3e995a
+      alterId: 0
+      cipher: auto
+      tls: true
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: sn433.nikatel.store
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: KR_60
+      type: trojan
+      server: 112.162.203.5
+      port: 50000
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: AM_62
+      type: trojan
+      server: 188.164.159.74
+      port: 8443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: AM_63
+      type: trojan
+      server: 188.164.159.18
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: RU_64
+      type: trojan
+      server: 45.67.215.217
+      port: 2087
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_65
+      type: trojan
+      server: 192.200.160.169
+      port: 2096
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: AM_66
+      type: trojan
+      server: 188.164.159.214
+      port: 2083
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_67
+      type: trojan
+      server: 67.226.221.12
+      port: 80
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: FR_68
+      type: trojan
+      server: 141.11.203.191
+      port: 8443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: NL_69
+      type: trojan
+      server: 5.35.68.249
+      port: 2053
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: RU_70
+      type: trojan
+      server: 46.254.92.142
+      port: 2087
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: KZ_71
+      type: trojan
+      server: 31.43.179.27
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: RU_72
+      type: trojan
+      server: 46.254.93.243
+      port: 8443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_73
+      type: trojan
+      server: 103.116.7.100
+      port: 2087
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_74
+      type: trojan
+      server: 167.68.4.223
+      port: 2096
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_75
+      type: trojan
+      server: 108.165.152.14
+      port: 2096
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: NL_76
+      type: trojan
+      server: 45.134.21.8
+      port: 2053
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: RU_77
+      type: trojan
+      server: 5.182.85.255
+      port: 2096
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_78
+      type: trojan
+      server: 199.34.228.50
+      port: 2053
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_79
+      type: trojan
+      server: 104.17.128.1
+      port: 2096
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: vle.amclubdns.dpdns.org
+      password: d6b8011a-c725-435a-9fec-bf6d3530392c
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: KZ_80
+      type: trojan
+      server: 31.43.179.60
+      port: 2053
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: SC_81
+      type: trojan
+      server: 154.197.64.206
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_82
+      type: trojan
+      server: 135.84.74.254
+      port: 2083
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_83
+      type: trojan
+      server: 2606:4700:3037::6815:444c
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_84
+      type: trojan
+      server: 2606:4700:58::a29f:2c52
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_85
+      type: trojan
+      server: 2606:4700:58::a29f:2ce3
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_86
+      type: trojan
+      server: 108.165.152.55
+      port: 2096
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CY_87
+      type: trojan
+      server: 45.150.115.195
+      port: 2087
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epmk.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_89
+      type: vmess
+      server: 120.233.203.78
+      port: 15002
+      uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: PE_90
+      type: trojan
+      server: 154.219.5.44
+      port: 2053
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: epml.ambercc.filegear-sg.me
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_91
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_92
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: MD_93
+      type: ss
+      server: 185.153.197.5
+      port: 989
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-cfb
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: f8f7aCzcPKbsF8p3
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_94
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 80f73b42-8264-11ef-8dc4-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_95
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_96
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_97
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_98
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_99
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_100
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: SI_101
+      type: ss
+      server: 91.132.94.200
+      port: 989
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-cfb
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: f8f7aCzcPKbsF8p3
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_102
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: IR_103
+      type: vmess
+      server: 193.151.151.93
+      port: 52262
+      uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_104
+      type: ss
+      server: 120.236.198.182
+      port: 40030
+      uuid: ""
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 7905a32b-012c-4711-89e2-73b6713eca75
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: RU_105
+      type: vmess
+      server: 45.147.201.231
+      port: 20071
+      uuid: 4b41312a-e40f-40c3-aa85-efc148060242
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_106
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: tcp
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: PT_107
+      type: ss
+      server: 185.231.233.112
+      port: 989
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-cfb
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: f8f7aCzcPKbsF8p3
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_108
+      type: trojan
+      server: 120.198.71.191
+      port: 55799
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 55f2afab-bc41-4231-b725-76bef15c3cf7
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_109
+      type: trojan
+      server: 120.198.71.191
+      port: 54031
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 55f2afab-bc41-4231-b725-76bef15c3cf7
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: KR_110
+      type: trojan
+      server: 121.149.228.125
+      port: 12315
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_111
+      type: vmess
+      server: 111.26.109.79
+      port: 30828
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 2
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_112
+      type: trojan
+      server: 183.240.180.15
+      port: 21233
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: US_113
+      type: trojan
+      server: 2606:4700:58::adf5:3b6e
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_114
+      type: vmess
+      server: 120.233.203.78
+      port: 15002
+      uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: US_115
+      type: trojan
+      server: 2606:4700:58::a29f:2ca8
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: US_116
+      type: trojan
+      server: 2606:4700:58::adf5:3b80
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: US_117
+      type: trojan
+      server: 2606:4700:58::adf5:3b90
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: US_119
+      type: vmess
+      server: 2606:4700:3033::ac43:b0c4
+      port: 443
+      uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05
+      alterId: 0
+      cipher: auto
+      tls: true
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_120
+      type: vmess
+      server: 36.150.94.35
+      port: 30812
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 2
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: US_121
+      type: vmess
+      server: 2606:4700:3031::6815:117f
+      port: 443
+      uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05
+      alterId: 0
+      cipher: auto
+      tls: true
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_122
+      type: vmess
+      server: 120.198.71.217
+      port: 58882
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_123
+      type: trojan
+      server: 183.240.180.15
+      port: 27235
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 225d1cca-d744-11ef-b790-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_124
+      type: trojan
+      server: 183.240.180.15
+      port: 14234
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_125
+      type: vmess
+      server: 120.198.71.217
+      port: 46759
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_126
+      type: trojan
+      server: 183.240.180.15
+      port: 14234
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: KR_127
+      type: trojan
+      server: 121.178.51.126
+      port: 50000
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: Aimer
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_128
+      type: trojan
+      server: 183.240.180.15
+      port: 27233
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: e3217bc2-061f-11f0-90e2-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_129
+      type: trojan
+      server: 183.240.180.15
+      port: 27231
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_130
+      type: trojan
+      server: 183.240.180.15
+      port: 27233
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_131
+      type: trojan
+      server: 183.240.180.15
+      port: 27231
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_132
+      type: trojan
+      server: 183.240.180.15
+      port: 27231
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_133
+      type: trojan
+      server: 183.240.180.15
+      port: 27231
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_134
+      type: trojan
+      server: 183.240.180.15
+      port: 27231
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 167db97c-ee01-11ef-b737-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_135
+      type: vmess
+      server: 111.26.109.79
+      port: 30809
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      alterId: 2
+      cipher: auto
+      tls: false
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_136
+      type: trojan
+      server: 183.240.180.15
+      port: 14234
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_137
+      type: trojan
+      server: 183.240.180.15
+      port: 27233
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 5cfee98c-0e3b-11ed-bd7c-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_138
+      type: trojan
+      server: 157.148.64.4
+      port: 15229
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 87b31a02-172e-11ee-a11f-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_139
+      type: trojan
+      server: 157.148.64.3
+      port: 15229
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: affe7124-c118-11ef-b6b2-f23c9164ca5d
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_140
+      type: trojan
+      server: 183.240.180.15
+      port: 14234
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: ee1b9e94-9b95-11ef-8967-f23c91cfbbc9
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: CN_141
+      type: trojan
+      server: 183.240.180.15
+      port: 14234
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: true
+    - name: SG_142
+      type: ss
+      server: 47.129.2.253
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-cfb
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: qawszxc123
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: US_143
+      type: ss
+      server: 156.251.179.139
+      port: 636
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-gcm
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 0b191076d18f
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: HK_144
+      type: vmess
+      server: 42.2.164.181
+      port: 80
+      uuid: 9b604194-17b7-11ef-80b0-f23c913c8d2b
+      alterId: 2
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: broadcastlv.chat.bilibili.com
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_145
+      type: ss
+      server: 2409:8c54:a820:100::1f
+      port: 44721
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-gcm
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 781bb54c-f089-48df-8102-01288a81eb10
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: JP_146
+      type: ss
+      server: 137.220.142.143
+      port: 636
+      uuid: ""
+      alterId: 0
+      cipher: aes-256-gcm
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 887bfcf43b52
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_147
+      type: trojan
+      server: 203.156.253.12
+      port: 39001
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 85f133142f04dbf6547da33895cfabb3
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_148
+      type: trojan
+      server: 183.240.180.15
+      port: 27233
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_150
+      type: trojan
+      server: 36.151.192.60
+      port: 13967
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: true
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: d0d08cddacc3190ea81b1b792e1b5fde
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
+    - name: CN_151
+      type: ss
+      server: 120.198.71.132
+      port: 49900
+      uuid: ""
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: c376082c-95c3-452e-88e4-6bb6a5daab41
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      udp: false
 proxy-groups:
     - name: GROUP_CN_TEST
       type: url-test
       proxies:
-        - CN_0
-        - CN_1
+        - CN_2
         - CN_3
-        - CN_4
         - CN_6
-        - CN_7
-        - CN_8
-        - CN_9
-        - CN_10
-        - CN_11
-        - CN_12
-        - CN_13
+        - CN_14
         - CN_15
-        - CN_18
+        - CN_16
+        - CN_17
         - CN_20
         - CN_22
         - CN_23
+        - CN_24
+        - CN_25
+        - CN_26
         - CN_27
         - CN_29
+        - CN_30
         - CN_34
+        - CN_35
+        - CN_49
+        - CN_50
+        - CN_51
+        - CN_54
+        - CN_57
         - CN_58
-        - CN_68
-        - CN_70
-        - CN_71
-        - CN_72
-        - CN_73
-        - CN_74
-        - CN_75
-        - CN_77
-        - CN_78
-        - CN_79
-        - CN_80
-        - CN_81
-        - CN_82
-        - CN_83
-        - CN_84
-        - CN_85
-        - CN_86
-        - CN_87
-        - CN_88
+        - CN_89
         - CN_91
-        - CN_93
+        - CN_92
+        - CN_94
         - CN_95
+        - CN_96
+        - CN_97
+        - CN_98
         - CN_99
         - CN_100
         - CN_102
-        - CN_103
-        - CN_105
+        - CN_104
         - CN_106
-        - CN_107
+        - CN_108
         - CN_109
-        - CN_110
         - CN_111
         - CN_112
-        - CN_113
         - CN_114
-        - CN_115
+        - CN_120
+        - CN_122
+        - CN_123
+        - CN_124
+        - CN_125
+        - CN_126
+        - CN_128
+        - CN_129
+        - CN_130
+        - CN_131
+        - CN_132
+        - CN_133
+        - CN_134
+        - CN_135
+        - CN_136
+        - CN_137
+        - CN_138
+        - CN_139
+        - CN_140
+        - CN_141
+        - CN_145
+        - CN_147
+        - CN_148
+        - CN_150
+        - CN_151
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 1500
     - name: GROUP_AD_TEST
       type: url-test
       proxies:
-        - AM_24
-        - AM_25
-        - AM_31
-        - AM_36
+        - AM_37
+        - AM_43
         - CY_44
-        - CY_47
-        - AM_48
+        - AM_62
+        - AM_63
+        - AM_66
+        - CY_87
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 0
     - name: GROUP_EH_TEST
       type: url-test
       proxies:
-        - FR_30
-        - HK_98
-        - HK_101
+        - HK_13
+        - ES_33
+        - FR_68
+        - HK_144
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 1500
     - name: GROUP_IL_TEST
       type: url-test
       proxies:
-        - IR_2
-        - KR_16
-        - IR_17
-        - KR_26
-        - KZ_40
-        - KZ_56
-        - KR_65
-        - KR_76
-        - LU_92
-        - JP_104
+        - JP_4
+        - KR_5
+        - JP_11
+        - KR_18
+        - JP_19
+        - IR_36
+        - LU_41
+        - IR_59
+        - KR_60
+        - KZ_71
+        - KZ_80
+        - IR_103
+        - KR_110
+        - KR_127
+        - JP_146
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 1500
     - name: GROUP_MP_TEST
       type: url-test
       proxies:
-        - MD_5
-        - PT_21
-        - PE_39
-        - NL_63
-        - NL_64
+        - PH_56
+        - NL_69
+        - NL_76
+        - PE_90
+        - MD_93
+        - PT_107
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 1500
     - name: GROUP_QT_TEST
       type: url-test
       proxies:
-        - SI_14
-        - RU_19
-        - RU_28
-        - RU_41
-        - RU_60
-        - SC_62
-        - RU_66
-        - RU_67
-        - SG_96
+        - SK_1
+        - RU_38
+        - TW_47
+        - RU_53
+        - RU_64
+        - RU_70
+        - RU_72
+        - RU_77
+        - SC_81
+        - SI_101
+        - RU_105
+        - SG_142
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 1500
     - name: GROUP_UX_TEST
       type: url-test
       proxies:
-        - US_32
-        - US_33
-        - US_35
-        - US_37
-        - US_38
+        - US_12
+        - VN_28
+        - US_39
+        - US_40
         - US_42
-        - US_43
         - US_45
         - US_46
-        - US_49
-        - US_51
-        - US_52
-        - US_54
-        - US_55
-        - US_59
-        - US_61
-        - US_69
-        - US_90
-        - US_94
-        - US_97
-        - VN_116
+        - US_48
+        - VN_52
+        - US_65
+        - US_67
+        - US_73
+        - US_74
+        - US_75
+        - US_78
+        - US_79
+        - US_82
+        - US_83
+        - US_84
+        - US_85
+        - US_86
+        - US_113
+        - US_115
+        - US_116
+        - US_117
+        - US_119
+        - US_121
+        - US_143
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 1500
