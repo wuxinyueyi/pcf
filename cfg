@@ -4,6 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
+    - name: CN_0
+      type: vmess
+      server: 58.246.138.244
+      port: 1443
+      uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+      alterId: 64
+      cipher: auto
+      tls: true
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: /634c5c4f9782
+        headers:
+            Host: centos7
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: true
     - name: SK_1
       type: ss
       server: 156.146.40.194
@@ -46,27 +67,6 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: true
-    - name: CN_3
-      type: trojan
-      server: 157.148.96.89
-      port: 15229
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: true
     - name: JP_4
       type: vmess
       server: 38.47.96.30
@@ -103,6 +103,27 @@ proxies:
         headers:
             Host: ocbc.com
       password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: false
+    - name: CN_9
+      type: trojan
+      server: 157.148.96.89
+      port: 15229
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
       protocol: ""
       obfs: ""
       protocol-param: ""
@@ -300,7 +321,7 @@ proxies:
       udp: false
     - name: CN_20
       type: ss
-      server: 183.240.211.97
+      server: 183.240.211.99
       port: 8766
       uuid: ""
       alterId: 0
@@ -468,7 +489,7 @@ proxies:
       udp: false
     - name: CN_29
       type: ss
-      server: 183.240.211.97
+      server: 183.240.211.99
       port: 8774
       uuid: ""
       alterId: 0
@@ -804,7 +825,7 @@ proxies:
       udp: false
     - name: US_64
       type: vmess
-      server: 172.67.73.39
+      server: 104.26.4.10
       port: 443
       uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649
       alterId: 0
@@ -846,7 +867,7 @@ proxies:
       udp: false
     - name: US_88
       type: vmess
-      server: 172.67.73.39
+      server: 104.26.5.10
       port: 443
       uuid: 283e8955-4a4a-41ca-ac61-3eabf3077a95
       alterId: 0
@@ -909,7 +930,7 @@ proxies:
       udp: false
     - name: US_270
       type: vmess
-      server: 172.67.72.15
+      server: 104.26.5.16
       port: 2083
       uuid: c208e0ae-6f6d-4745-99da-44a44744c530
       alterId: 0
@@ -963,27 +984,6 @@ proxies:
         path: /
         headers:
             Host: hkt.gotochinatown.net
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: US_285
-      type: vmess
-      server: 104.16.0.28
-      port: 80
-      uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: sg02s.827a4c39.shop
       password: ""
       protocol: ""
       obfs: ""
@@ -1203,7 +1203,7 @@ proxies:
       udp: false
     - name: US_373
       type: vmess
-      server: 104.18.12.229
+      server: 104.18.13.229
       port: 8880
       uuid: 92e886f3-53c4-41a9-de97-a54f3abbdd9e
       alterId: 0
@@ -1497,7 +1497,7 @@ proxies:
       udp: false
     - name: US_442
       type: vmess
-      server: 141.193.213.20
+      server: 141.193.213.21
       port: 443
       uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
       alterId: 0
@@ -1636,27 +1636,6 @@ proxies:
         headers:
             Host: baidu.com
       password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: US_453
-      type: trojan
-      server: 2606:4700::6813:ad44
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /azadnet-5vk.pages.dev/?ed=2560&PROT_TYPE=trojan
-        headers:
-            Host: azadnet-5vk.pages.dev
-      password: d0298536-d670-4045-bbb1-ddd5ea68683e
       protocol: ""
       obfs: ""
       protocol-param: ""
@@ -1854,7 +1833,7 @@ proxies:
       udp: false
     - name: US_486
       type: vmess
-      server: 2606:4700:8ded::330c:6d9d
+      server: 2606:4700:8d95::6200:23d2
       port: 80
       uuid: 2f38f848-a899-4c87-9807-207a41615e3c
       alterId: 0
@@ -1875,7 +1854,7 @@ proxies:
       udp: false
     - name: US_487
       type: vmess
-      server: 2606:4700:99ef::2cff:62c7
+      server: 2606:4700:8d9b::5708:3588
       port: 80
       uuid: 2f38f848-a899-4c87-9807-207a41615e3c
       alterId: 0
@@ -1896,28 +1875,7 @@ proxies:
       udp: false
     - name: US_488
       type: vmess
-      server: 2606:4700:99ef::2cff:62c7
-      port: 80
-      uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /rongseven?ed=2048
-        headers:
-            Host: us.freeyyds.dpdns.org
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: US_489
-      type: vmess
-      server: 2606:4700:3030::6815:7001
+      server: 2606:4700:9a9d::2649:4bb7
       port: 80
       uuid: 2f38f848-a899-4c87-9807-207a41615e3c
       alterId: 0
@@ -1980,7 +1938,7 @@ proxies:
       udp: false
     - name: US_493
       type: vmess
-      server: 2606:4700:976f::64a1:67e3
+      server: 2606:4700:8d9b::5708:3588
       port: 2052
       uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
       alterId: 0
@@ -2022,7 +1980,7 @@ proxies:
       udp: false
     - name: US_495
       type: vmess
-      server: 2606:4700:8d79::6930:622f
+      server: 2606:4700:8d9b::5708:3588
       port: 8080
       uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
       alterId: 0
@@ -2043,7 +2001,7 @@ proxies:
       udp: false
     - name: US_496
       type: vmess
-      server: 2606:4700:9add::1a5a:7c7
+      server: 2606:4700:9a6f::5dba:319f
       port: 8880
       uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
       alterId: 0
@@ -2106,7 +2064,7 @@ proxies:
       udp: false
     - name: US_500
       type: vmess
-      server: 2606:4700:9a9d::730a:bc2
+      server: 2606:4700:8d95::6200:23d2
       port: 2086
       uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
       alterId: 0
@@ -2148,7 +2106,7 @@ proxies:
       udp: false
     - name: US_502
       type: vmess
-      server: 104.24.92.16
+      server: 104.26.11.157
       port: 443
       uuid: 56b915c0-bdf8-4749-ab55-b44d0469e46d
       alterId: 0
@@ -2160,27 +2118,6 @@ proxies:
         path: /
         headers:
             Host: go.daluquan.top
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: SG_504
-      type: vmess
-      server: 2404:2280:1c8:0:3::48
-      port: 8443
-      uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
-      alterId: 0
-      cipher: auto
-      tls: true
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: us01.sh-cloudflare.sbs
       password: ""
       protocol: ""
       obfs: ""
@@ -2524,6 +2461,27 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: false
+    - name: US_528
+      type: vmess
+      server: 2606:4700:3033::ac43:cd83
+      port: 80
+      uuid: 512d9674-db12-44ca-a1b5-654244549b65
+      alterId: 0
+      cipher: auto
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+        headers:
+            Host: wwwe3.11890604.xyz
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: false
     - name: KR_533
       type: ss
       server: 3.38.134.57
@@ -2841,7 +2799,7 @@ proxies:
       udp: false
     - name: US_563
       type: vmess
-      server: 2606:4700:20::681a:50a
+      server: 2606:4700:20::ac43:4927
       port: 443
       uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
       alterId: 0
@@ -4710,7 +4668,7 @@ proxies:
       udp: false
     - name: US_701
       type: vmess
-      server: 2606:4700:20::681a:870
+      server: 2606:4700:20::ac43:49d0
       port: 80
       uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615
       alterId: 0
@@ -4878,7 +4836,7 @@ proxies:
       udp: false
     - name: US_722
       type: vmess
-      server: 2606:4700:20::681a:c36
+      server: 2606:4700:20::681a:d36
       port: 80
       uuid: 66ddd790-10ed-4a16-b334-0b7e3577b5b7
       alterId: 0
@@ -5121,27 +5079,6 @@ proxies:
         path: /dabai.in
         headers:
             Host: TG.WangCai2.s2.db-link02.top
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: US_737
-      type: vmess
-      server: 2606:4700:3036::6815:4e89
-      port: 443
-      uuid: 6c7c5e3a-73ad-467a-1241-206987daa04f
-      alterId: 0
-      cipher: auto
-      tls: true
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: /ws
       password: ""
       protocol: ""
       obfs: ""
@@ -5485,9 +5422,9 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: false
-    - name: SG_810
+    - name: HK_810
       type: vmess
-      server: 23.15.147.118
+      server: 23.50.21.119
       port: 443
       uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
       alterId: 0
@@ -5541,6 +5478,27 @@ proxies:
         path: /path/220128071100
         headers:
             Host: ""
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: false
+    - name: US_824
+      type: vmess
+      server: 2606:4700:3037::ac43:874b
+      port: 2053
+      uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+      alterId: 0
+      cipher: auto
+      tls: true
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /eisasqa
+        headers:
+            Host: foxpol2.fovi.tk
       password: ""
       protocol: ""
       obfs: ""
@@ -5739,7 +5697,7 @@ proxies:
       udp: false
     - name: US_921
       type: vmess
-      server: 172.237.146.38
+      server: 172.237.146.8
       port: 443
       uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
       alterId: 0
@@ -5751,6 +5709,27 @@ proxies:
         path: /ECTCJ0DF
         headers:
             Host: lg1.trump2023.us
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: false
+    - name: US_924
+      type: vmess
+      server: 172.237.146.8
+      port: 443
+      uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808
+      alterId: 0
+      cipher: auto
+      tls: true
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /vmess
+        headers:
+            Host: sg1-v.sshmax.xyz
       password: ""
       protocol: ""
       obfs: ""
@@ -5844,7 +5823,7 @@ proxies:
       udp: false
     - name: CN_941
       type: vmess
-      server: 120.233.44.141
+      server: 120.233.44.139
       port: 9111
       uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
       alterId: 0
@@ -5886,7 +5865,7 @@ proxies:
       udp: false
     - name: CN_945
       type: vmess
-      server: 120.233.44.142
+      server: 120.233.44.141
       port: 20025
       uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
       alterId: 0
@@ -5991,7 +5970,7 @@ proxies:
       udp: false
     - name: US_994
       type: trojan
-      server: 172.233.219.49
+      server: 172.237.146.25
       port: 443
       uuid: ""
       alterId: 0
@@ -6033,7 +6012,7 @@ proxies:
       udp: false
     - name: US_1014
       type: trojan
-      server: 172.237.146.8
+      server: 172.237.146.25
       port: 443
       uuid: ""
       alterId: 0
@@ -6199,6 +6178,27 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: false
+    - name: US_1050
+      type: trojan
+      server: 172.237.146.8
+      port: 443
+      uuid: ""
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ""
+      ws-opts:
+        path: ""
+        headers:
+            Host: ""
+      password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: false
     - name: KR_1053
       type: vmess
       server: 52.231.200.179
@@ -6222,7 +6222,7 @@ proxies:
       udp: false
     - name: US_1062
       type: trojan
-      server: 172.233.219.49
+      server: 172.237.146.8
       port: 443
       uuid: ""
       alterId: 0
@@ -6277,27 +6277,6 @@ proxies:
         headers:
             Host: ""
       password: amazonskr05
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: US_1114
-      type: trojan
-      server: 172.237.146.8
-      port: 443
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: false
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
       protocol: ""
       obfs: ""
       protocol-param: ""
@@ -6558,7 +6537,7 @@ proxies:
       udp: false
     - name: US_1171
       type: vmess
-      server: 2606:4700:99ef::2cff:62c7
+      server: 2606:4700:8d95::6200:23d2
       port: 2052
       uuid: e7e26f7b-c4d8-3856-9c9a-dbb98f97fd6b
       alterId: 0
@@ -6600,7 +6579,7 @@ proxies:
       udp: false
     - name: US_1183
       type: vmess
-      server: 2606:4700:20::ac43:4bac
+      server: 2606:4700:20::681a:c1f
       port: 443
       uuid: c9ddb489-7b5e-49ed-8b21-749f4a0ed56d
       alterId: 0
@@ -6642,7 +6621,7 @@ proxies:
       udp: false
     - name: MY_1185
       type: trojan
-      server: 85.211.179.48
+      server: 85.211.177.47
       port: 443
       uuid: ""
       alterId: 0
@@ -6684,7 +6663,7 @@ proxies:
       udp: false
     - name: CN_1193
       type: ss
-      server: 120.236.198.184
+      server: 183.236.97.178
       port: 40030
       uuid: ""
       alterId: 0
@@ -6703,30 +6682,9 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: false
-    - name: US_1194
-      type: vmess
-      server: 2606:4700:3034::6815:3958
-      port: 443
-      uuid: 7248e825-887c-48b9-83bc-c26bc6392bf8
-      alterId: 0
-      cipher: auto
-      tls: true
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: xXCDfGt.iRaN.pp.ua
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
     - name: MY_1197
       type: trojan
-      server: 85.211.179.48
+      server: 85.211.177.47
       port: 443
       uuid: ""
       alterId: 0
@@ -6747,7 +6705,7 @@ proxies:
       udp: false
     - name: US_1199
       type: vmess
-      server: 2606:4700:8d79::3473:19b7
+      server: 2606:4700:9a6f::5dba:319f
       port: 80
       uuid: acd2a463-4d67-3272-8326-f0c9179d52de
       alterId: 0
@@ -6831,7 +6789,7 @@ proxies:
       udp: false
     - name: US_1220
       type: vmess
-      server: 2606:4700:20::681a:539
+      server: 2606:4700:20::ac43:477a
       port: 8080
       uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
       alterId: 0
@@ -6852,7 +6810,7 @@ proxies:
       udp: false
     - name: US_1236
       type: vmess
-      server: 2606:4700:20::681a:539
+      server: 2606:4700:20::ac43:477a
       port: 2095
       uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
       alterId: 0
@@ -7188,7 +7146,7 @@ proxies:
       udp: false
     - name: CN_1425
       type: trojan
-      server: 120.241.226.93
+      server: 120.241.226.94
       port: 2053
       uuid: ""
       alterId: 0
@@ -7209,7 +7167,7 @@ proxies:
       udp: false
     - name: TW_1430
       type: trojan
-      server: 36.228.192.2
+      server: 36.228.207.27
       port: 8443
       uuid: ""
       alterId: 0
@@ -7272,7 +7230,7 @@ proxies:
       udp: false
     - name: TW_1462
       type: trojan
-      server: 36.228.207.27
+      server: 36.228.207.103
       port: 8443
       uuid: ""
       alterId: 0
@@ -7377,7 +7335,7 @@ proxies:
       udp: false
     - name: NL_1481
       type: trojan
-      server: 5.79.68.107
+      server: 77.247.179.83
       port: 443
       uuid: ""
       alterId: 0
@@ -7440,7 +7398,7 @@ proxies:
       udp: false
     - name: TW_1488
       type: trojan
-      server: 61.221.189.241
+      server: 60.250.152.229
       port: 8443
       uuid: ""
       alterId: 0
@@ -7461,7 +7419,7 @@ proxies:
       udp: false
     - name: TW_1514
       type: trojan
-      server: 60.250.152.229
+      server: 61.221.189.241
       port: 8443
       uuid: ""
       alterId: 0
@@ -7482,7 +7440,7 @@ proxies:
       udp: false
     - name: TW_1516
       type: trojan
-      server: 211.20.245.139
+      server: 60.250.152.229
       port: 8443
       uuid: ""
       alterId: 0
@@ -7524,7 +7482,7 @@ proxies:
       udp: false
     - name: CN_1519
       type: trojan
-      server: 120.241.226.93
+      server: 120.241.226.94
       port: 2053
       uuid: ""
       alterId: 0
@@ -7566,7 +7524,7 @@ proxies:
       udp: false
     - name: TW_1529
       type: trojan
-      server: 60.250.152.209
+      server: 61.221.189.241
       port: 8443
       uuid: ""
       alterId: 0
@@ -7587,7 +7545,7 @@ proxies:
       udp: false
     - name: CN_1533
       type: trojan
-      server: 120.241.226.94
+      server: 120.241.226.93
       port: 2053
       uuid: ""
       alterId: 0
@@ -7671,7 +7629,7 @@ proxies:
       udp: false
     - name: TW_1560
       type: trojan
-      server: 60.250.152.209
+      server: 211.20.245.139
       port: 8443
       uuid: ""
       alterId: 0
@@ -7734,7 +7692,7 @@ proxies:
       udp: false
     - name: TW_1569
       type: trojan
-      server: 36.228.207.103
+      server: 211.20.245.139
       port: 8443
       uuid: ""
       alterId: 0
@@ -7776,7 +7734,7 @@ proxies:
       udp: false
     - name: TW_1573
       type: trojan
-      server: 211.20.245.139
+      server: 36.228.208.62
       port: 8443
       uuid: ""
       alterId: 0
@@ -7797,7 +7755,7 @@ proxies:
       udp: false
     - name: CN_1574
       type: trojan
-      server: 120.241.226.93
+      server: 120.241.226.94
       port: 2053
       uuid: ""
       alterId: 0
@@ -7860,7 +7818,7 @@ proxies:
       udp: false
     - name: TW_1587
       type: trojan
-      server: 60.250.152.209
+      server: 36.228.192.2
       port: 8443
       uuid: ""
       alterId: 0
@@ -8238,7 +8196,7 @@ proxies:
       udp: false
     - name: US_1679
       type: vmess
-      server: 172.233.219.78
+      server: 172.237.146.25
       port: 80
       uuid: 0baaf014-af04-4028-be53-f5c75bb276ae
       alterId: 0
@@ -8994,7 +8952,7 @@ proxies:
       udp: false
     - name: US_2010
       type: vmess
-      server: 2606:4700:3033::6815:3bd
+      server: 2606:4700:3037::ac43:831b
       port: 2096
       uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
       alterId: 0
@@ -9034,9 +8992,30 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: false
+    - name: US_2014
+      type: vmess
+      server: 2606:4700:3037::ac43:831b
+      port: 2083
+      uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+      alterId: 0
+      cipher: auto
+      tls: true
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /
+        headers:
+            Host: cc2dash.89060004.xyz
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: false
     - name: US_2015
       type: vmess
-      server: 172.66.168.227
+      server: 172.66.168.223
       port: 443
       uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
       alterId: 0
@@ -9097,30 +9076,9 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: false
-    - name: US_2021
-      type: vmess
-      server: 2606:4700:3037::ac43:831b
-      port: 2083
-      uuid: 75d96365-1229-4fc4-dbda-855717f876cf
-      alterId: 0
-      cipher: auto
-      tls: true
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: rak1ding.89060004.xyz
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
     - name: US_2022
       type: vmess
-      server: 162.159.128.163
+      server: 104.16.0.135
       port: 80
       uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
       alterId: 0
@@ -9246,7 +9204,7 @@ proxies:
       udp: false
     - name: TW_2043
       type: trojan
-      server: 36.228.192.2
+      server: 36.228.208.62
       port: 3462
       uuid: ""
       alterId: 0
@@ -9322,27 +9280,6 @@ proxies:
         headers:
             Host: ""
       password: dd6dcb10-4683-11f0-ae79-1239d0255272
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: HK_2060
-      type: vmess
-      server: 219.79.237.197
-      port: 30807
-      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-      alterId: 2
-      cipher: auto
-      tls: false
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /oooo
-        headers:
-            Host: v10.heduian.link
-      password: ""
       protocol: ""
       obfs: ""
       protocol-param: ""
@@ -9666,7 +9603,7 @@ proxies:
       udp: false
     - name: US_2133
       type: vmess
-      server: 172.64.95.10
+      server: 141.101.120.247
       port: 80
       uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
       alterId: 0
@@ -13404,7 +13341,7 @@ proxies:
       udp: false
     - name: US_3616
       type: vmess
-      server: 2606:4700::6812:185c
+      server: 2606:4700::6812:195c
       port: 2052
       uuid: f584de15-2034-4170-a723-f48c2bae5e0f
       alterId: 0
@@ -14326,9 +14263,9 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: false
-    - name: CN_3711
+    - name: US_3711
       type: vmess
-      server: 2409:8c38:c50:604:3dd9:721d:c23b:fffe
+      server: 162.159.153.2
       port: 80
       uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
       alterId: 0
@@ -14496,7 +14433,7 @@ proxies:
       udp: false
     - name: US_3731
       type: vmess
-      server: 2606:4700:20::681a:f10
+      server: 2606:4700:20::681a:e10
       port: 443
       uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
       alterId: 0
@@ -14601,7 +14538,7 @@ proxies:
       udp: false
     - name: US_3738
       type: vmess
-      server: 2606:4700:20::681a:6b2
+      server: 2606:4700:20::681a:656
       port: 80
       uuid: ad6afad6-5659-3f25-9477-029735d5401c
       alterId: 2
@@ -15798,7 +15735,7 @@ proxies:
       udp: false
     - name: US_3957
       type: vmess
-      server: 104.18.14.89
+      server: 104.18.14.229
       port: 443
       uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
       alterId: 0
@@ -20691,7 +20628,7 @@ proxies:
       udp: true
     - name: CY_4595
       type: trojan
-      server: 195.85.59.99
+      server: 195.85.59.157
       port: 8443
       uuid: ""
       alterId: 0
@@ -20712,7 +20649,7 @@ proxies:
       udp: true
     - name: CY_4596
       type: trojan
-      server: 195.85.59.246
+      server: 195.85.59.10
       port: 8443
       uuid: ""
       alterId: 0
@@ -20838,7 +20775,7 @@ proxies:
       udp: true
     - name: US_4602
       type: vless
-      server: 2606:4700::6810:8eed
+      server: 2606:4700::6810:8fed
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -20964,7 +20901,7 @@ proxies:
       udp: true
     - name: US_4608
       type: vless
-      server: 2606:4700:20::681a:c36
+      server: 2606:4700:20::681a:d36
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -21027,7 +20964,7 @@ proxies:
       udp: true
     - name: US_4611
       type: vless
-      server: 2606:4700:20::681a:224
+      server: 2606:4700:20::ac43:4812
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -21069,7 +21006,7 @@ proxies:
       udp: true
     - name: US_4613
       type: vless
-      server: 2606:4700:20::ac43:46bf
+      server: 2606:4700:20::681a:625
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -21132,7 +21069,7 @@ proxies:
       udp: true
     - name: US_4616
       type: vless
-      server: 2606:4700:20::681a:d17
+      server: 2606:4700:20::681a:c17
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -21321,7 +21258,7 @@ proxies:
       udp: true
     - name: US_4625
       type: vless
-      server: 2606:4700:10::ac42:affa
+      server: 2606:4700:10::6814:22d4
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -21489,7 +21426,7 @@ proxies:
       udp: true
     - name: US_4634
       type: vless
-      server: 2606:4700::6810:1476
+      server: 2606:4700::6810:1576
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -21552,7 +21489,7 @@ proxies:
       udp: true
     - name: US_4638
       type: vless
-      server: 2606:4700:4400::ac40:9242
+      server: 2606:4700:4400::6812:29be
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -21615,7 +21552,7 @@ proxies:
       udp: true
     - name: US_4642
       type: vless
-      server: 2606:4700:20::681a:ade
+      server: 2606:4700:20::ac43:4664
       port: 443
       uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
       alterId: 0
@@ -22203,7 +22140,7 @@ proxies:
       udp: false
     - name: CY_4674
       type: vmess
-      server: 195.85.59.99
+      server: 195.85.59.157
       port: 80
       uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
       alterId: 0
@@ -22224,7 +22161,7 @@ proxies:
       udp: false
     - name: CY_4675
       type: vmess
-      server: 195.85.59.246
+      server: 195.85.59.10
       port: 80
       uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
       alterId: 0
@@ -22266,7 +22203,7 @@ proxies:
       udp: true
     - name: CY_4677
       type: vless
-      server: 195.85.59.99
+      server: 195.85.59.157
       port: 8080
       uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
       alterId: 0
@@ -22287,7 +22224,7 @@ proxies:
       udp: true
     - name: CY_4678
       type: vless
-      server: 195.85.59.246
+      server: 195.85.59.10
       port: 8080
       uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
       alterId: 0
@@ -22341,6 +22278,27 @@ proxies:
         path: /hajmi
         headers:
             Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-En.85858569.xYz.
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: true
+    - name: US_4681
+      type: vless
+      server: 2606:4700:3030::6815:5001
+      port: 80
+      uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
+      alterId: 0
+      cipher: ""
+      tls: false
+      skip-cert-verify: false
+      network: ws
+      ws-opts:
+        path: /hajmi
+        headers:
+            Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-Us.85858569.xYz.
       password: ""
       protocol: ""
       obfs: ""
@@ -23379,7 +23337,7 @@ proxies:
       udp: true
     - name: US_4735
       type: vless
-      server: 104.17.148.22
+      server: 104.17.147.22
       port: 2052
       uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
       alterId: 0
@@ -23568,7 +23526,7 @@ proxies:
       udp: true
     - name: US_4748
       type: vless
-      server: 162.159.152.2
+      server: 162.159.153.2
       port: 8080
       uuid: a4135b60-bcda-4163-972f-d98b39a612ac
       alterId: 0
@@ -23736,7 +23694,7 @@ proxies:
       udp: true
     - name: US_4757
       type: trojan
-      server: 2606:4700::c8c2:a010
+      server: 2606:4700::99e4:7e15:b085:80dc
       port: 443
       uuid: ""
       alterId: 0
@@ -25288,27 +25246,6 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: true
-    - name: US_4836
-      type: vmess
-      server: 2606:4700:3032::6815:411f
-      port: 443
-      uuid: 512d9674-db12-44ca-a1b5-654244549b65
-      alterId: 0
-      cipher: auto
-      tls: true
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
-        headers:
-            Host: xxcdvfgty.444652.xyz
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: true
     - name: US_4838
       type: vmess
       server: 2606:4700:3031::6815:16D3
@@ -25330,27 +25267,6 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: true
-    - name: US_4839
-      type: vmess
-      server: 2606:4700:3033::ac43:cd83
-      port: 80
-      uuid: f898ffcb-6417-4373-9640-0b66091e8206
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: /GnJ3bBxV91uFkYtuzXyJ5XNeH1R1
-        headers:
-            Host: 3333r567.11890604.xyz
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: true
     - name: US_4842
       type: vmess
       server: 2606:4700:3037::6815:39ce
@@ -25365,6 +25281,27 @@ proxies:
         path: /GnJ3bBxV91uFkYtuzXyJ5XNeH1R1
         headers:
             Host: xxcccvbnmko0.4444926.xyz
+      password: ""
+      protocol: ""
+      obfs: ""
+      protocol-param: ""
+      obfs-param: ""
+      obfs-password: ""
+      udp: true
+    - name: US_4844
+      type: vmess
+      server: 2606:4700:3034::ac43:ad40
+      port: 443
+      uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+      alterId: 0
+      cipher: auto
+      tls: true
+      skip-cert-verify: true
+      network: ws
+      ws-opts:
+        path: /6We3U9Df1WGxgFnoFPw1
+        headers:
+            Host: ssssssssssssfffffffgh.2032.pp.ua
       password: ""
       protocol: ""
       obfs: ""
@@ -25479,7 +25416,7 @@ proxies:
       udp: true
     - name: US_4854
       type: vmess
-      server: 2606:4700::6810:a320
+      server: 2606:4700::6810:9320
       port: 443
       uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
       alterId: 0
@@ -25491,27 +25428,6 @@ proxies:
         path: /us.kkp.me.eu.org/aa
         headers:
             Host: farid.1.berozha.ir
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: true
-    - name: US_4856
-      type: vmess
-      server: 2606:4700:3032::6815:41be
-      port: 80
-      uuid: 7701ddf5-6a48-401b-a3ec-8af52b6deb48
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: true
-      network: ws
-      ws-opts:
-        path: /mlyR5tmcKx3hweBopuhWEbIX
-        headers:
-            Host: sssdddddddfffg.4444936.xyz
       password: ""
       protocol: ""
       obfs: ""
@@ -26172,7 +26088,7 @@ proxies:
       udp: true
     - name: US_4890
       type: vless
-      server: 104.18.12.229
+      server: 104.18.13.229
       port: 2087
       uuid: 90c7ad5e-cd15-4314-b39b-aeabd397d592
       alterId: 0
@@ -26464,55 +26380,14 @@ proxies:
       obfs-param: ""
       obfs-password: ""
       udp: true
-    - name: SG_4911
-      type: trojan
-      server: 18.139.117.210
-      port: 6668
-      uuid: ""
-      alterId: 0
-      cipher: ""
-      tls: false
-      skip-cert-verify: true
-      network: ""
-      ws-opts:
-        path: ""
-        headers:
-            Host: ""
-      password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
-    - name: SG_4912
-      type: vmess
-      server: 18.139.117.210
-      port: 6868
-      uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-      alterId: 0
-      cipher: auto
-      tls: false
-      skip-cert-verify: false
-      network: ws
-      ws-opts:
-        path: /
-        headers:
-            Host: end-gfw.com
-      password: ""
-      protocol: ""
-      obfs: ""
-      protocol-param: ""
-      obfs-param: ""
-      obfs-password: ""
-      udp: false
 proxy-groups:
     - name: GROUP_CN_TEST
       type: url-test
       proxies:
+        - CN_0
         - CN_2
-        - CN_3
         - CN_6
+        - CN_9
         - CN_12
         - HK_13
         - HK_14
@@ -26539,6 +26414,7 @@ proxy-groups:
         - CN_452
         - HK_475
         - CN_734
+        - HK_810
         - CN_840
         - CN_842
         - CN_941
@@ -26571,7 +26447,6 @@ proxy-groups:
         - CN_1961
         - HK_2000
         - CN_2002
-        - HK_2060
         - CN_2126
         - CN_2127
         - CN_2128
@@ -26582,7 +26457,6 @@ proxy-groups:
         - CN_3528
         - HK_3671
         - HK_3693
-        - CN_3711
         - CN_4588
         - CN_4589
         - CN_4590
@@ -26931,12 +26805,10 @@ proxy-groups:
         - SG_371
         - SG_451
         - RU_501
-        - SG_504
         - RU_516
         - RU_517
         - TW_534
         - RU_723
-        - SG_810
         - SG_814
         - SG_825
         - SG_1085
@@ -26997,8 +26869,6 @@ proxy-groups:
         - RU_4896
         - RU_4897
         - RU_4903
-        - SG_4911
-        - SG_4912
       url: http://www.apple.com/library/test/success.html
       interval: 120
       timeout: 1500
@@ -27017,7 +26887,6 @@ proxy-groups:
         - US_219
         - US_270
         - US_281
-        - US_285
         - US_293
         - US_324
         - US_359
@@ -27036,7 +26905,6 @@ proxy-groups:
         - US_445
         - VN_447
         - VN_448
-        - US_453
         - US_466
         - US_468
         - US_481
@@ -27045,7 +26913,6 @@ proxy-groups:
         - US_486
         - US_487
         - US_488
-        - US_489
         - US_490
         - US_491
         - US_493
@@ -27066,6 +26933,7 @@ proxy-groups:
         - US_513
         - US_514
         - US_525
+        - US_528
         - VN_536
         - US_544
         - US_545
@@ -27131,7 +26999,6 @@ proxy-groups:
         - US_729
         - US_730
         - US_736
-        - US_737
         - US_739
         - US_752
         - US_759
@@ -27147,9 +27014,11 @@ proxy-groups:
         - US_805
         - US_809
         - US_811
+        - US_824
         - US_838
         - US_857
         - US_921
+        - US_924
         - US_932
         - US_933
         - US_934
@@ -27164,9 +27033,9 @@ proxy-groups:
         - US_1032
         - US_1034
         - US_1035
+        - US_1050
         - US_1062
         - US_1064
-        - US_1114
         - US_1129
         - US_1130
         - US_1136
@@ -27177,7 +27046,6 @@ proxy-groups:
         - US_1171
         - VN_1178
         - US_1183
-        - US_1194
         - US_1199
         - US_1206
         - US_1217
@@ -27214,10 +27082,10 @@ proxy-groups:
         - US_1868
         - US_2010
         - US_2011
+        - US_2014
         - US_2015
         - US_2019
         - US_2020
-        - US_2021
         - US_2022
         - US_2031
         - US_2032
@@ -27401,6 +27269,7 @@ proxy-groups:
         - US_3692
         - US_3694
         - US_3710
+        - US_3711
         - US_3722
         - US_3723
         - US_3725
@@ -27703,6 +27572,7 @@ proxy-groups:
         - US_4654
         - US_4679
         - US_4680
+        - US_4681
         - US_4682
         - US_4683
         - US_4684
@@ -27788,15 +27658,13 @@ proxy-groups:
         - US_4808
         - US_4830
         - US_4831
-        - US_4836
         - US_4838
-        - US_4839
         - US_4842
+        - US_4844
         - US_4848
         - US_4849
         - US_4852
         - US_4854
-        - US_4856
         - US_4857
         - US_4868
         - US_4869
